@@ -24,6 +24,11 @@ const LogoWrapper = styled.div`
     width: 120px;
     height: 100px;
   }
+
+  ${media.lessThan("small")`
+  width: 80px;
+  height: 65px;
+  `}
 `;
 
 const LinksWrapper = styled.div`
@@ -39,6 +44,10 @@ const LinksWrapper = styled.div`
       letter-spacing: -0.07rem;
       color: #000000;
       font-weight: bold;
+
+      ${media.lessThan("small")`
+  font-size: .6rem;
+  `}
     }
   }
 
@@ -46,6 +55,9 @@ const LinksWrapper = styled.div`
     background: #6500e0;
     padding: 0.6rem;
     border-radius: 0.5rem;
+    ${media.lessThan("small")`
+  padding: .4rem;
+  `}
     ${media.greaterThan("medium")`
     margin-left: .8rem;
     `}
