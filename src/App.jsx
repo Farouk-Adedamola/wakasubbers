@@ -1,35 +1,57 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Fragment, useState, useEffect } from "react";
+import styled from "styled-components";
+import media from "styled-media-query";
+import DotLoader from "react-spinners/ClipLoader";
+import Navigation from "./Componenents/Navigation";
+// import classes from "./"
+
+const Wrapper = styled.div``;
+
+const Container = styled.div`
+  padding: 0 1rem 0 1rem;
+
+  ${media.greaterThan("medium")`
+  padding: 0 4rem 0 4rem;
+  `}
+  ${media.greaterThan("large")`
+padding: 0 8rem 0 8rem;
+`}
+`;
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Fragment style={{ width: "100%" }}>
+      {loading ? (
+        <DotLoader
+          color={"#6500e0"}
+          loading={loading}
+          size={40}
+          cssOverride={{
+            display: "block",
+            margin: "40vh auto",
+          }}
+        />
+      ) : (
+        <Wrapper>
+          <Navigation />
+          <Container>
+            {/* <h1>HELLO THERE</h1>
+          <h2>HELLO THERE</h2>
+          <h3>HELLO THERE</h3>
+          <h4>HELLO THERE</h4> */}
+          </Container>
+        </Wrapper>
+      )}
+    </Fragment>
+  );
 }
 
-export default App
+export default App;
