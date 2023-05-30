@@ -39,10 +39,10 @@ const Container = styled.div`
     font-family: "regular";
     text-transform: capitalize;
     letter-spacing: -0.08rem;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     color: #191716;
     ${media.greaterThan("medium")`
-    // font-size: 1.4rem;
+    font-size: 1.1rem;
   `}
     ${media.greaterThan("large")`
     font-size: 1.5rem;
@@ -58,6 +58,9 @@ const Linked = styled.div`
   p {
     font-size: 0.8rem;
     color: #000;
+    ${media.lessThan("medium")`
+    font-size: .6rem;
+  `}
   }
 
   img {

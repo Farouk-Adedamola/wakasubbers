@@ -43,7 +43,7 @@ const LeftHandImage = styled.div`
   }
   img {
     ${media.lessThan("medium")`
-    width: 25vw;
+    width: 30vw;
     `}
   }
 `;
