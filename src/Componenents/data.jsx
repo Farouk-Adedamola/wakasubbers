@@ -20,3 +20,26 @@ export const ServiceData = [
     CSS: { background: "#f1e5ff" },
   },
 ];
+
+export const Validity = [
+  {
+    id: "1",
+    head: "3",
+    text: "payment options",
+  },
+  {
+    id: "2",
+    head: "7k+",
+    text: "Completed transactions",
+  },
+  {
+    id: "3",
+    head: "3k+",
+    text: "Trusted customers",
+  },
+  {
+    id: "4",
+    head: "3",
+    text: "Affiliated partners",
+  },
+];
