@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import styled from "styled-components";
 import media from "styled-media-query";
-// import BsArrowRightShort from "react-icons/bs";
+import arrow from "../assets/arrow.svg";
 import { ServiceData } from "./data";
 
 const Section = styled.section`
@@ -45,15 +45,24 @@ const Container = styled.div`
     // font-size: 1.4rem;
   `}
     ${media.greaterThan("large")`
-    // font-size: 1.7rem;
+    font-size: 1.5rem;
   `}
   }
 `;
 
 const Linked = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
   p {
-    font-size: 1rem;
-    color: #000000;
+    font-size: 0.8rem;
+    color: #000;
+  }
+
+  img {
+    width: 15px;
+    margin-left: 10px;
   }
 `;
 const Services = () => {
@@ -67,7 +76,7 @@ const Services = () => {
               <p>{text}</p>
               <Linked>
                 <p>explore features</p>
-                {/* <BsArrowRightShort /> */}
+                <img src={arrow} alt="arrow" />
               </Linked>
             </Container>
           );

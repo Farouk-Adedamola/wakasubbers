@@ -11,12 +11,12 @@ export const ServiceData = [
   },
   {
     id: "3",
-    text: "Result checkers",
+    text: "Result checkers on the go",
     CSS: { background: "#ffede3" },
   },
   {
     id: "4",
-    text: "Cable subscription",
+    text: "Fast and reliable Cable subscription",
     CSS: { background: "#f1e5ff" },
   },
 ];

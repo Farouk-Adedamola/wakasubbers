@@ -58,7 +58,7 @@ const LinksWrapper = styled.div`
       font-weight: bold;
 
       ${media.lessThan("small")`
-  font-size: .6rem;
+  font-size: .8rem;
   `}
     }
   }

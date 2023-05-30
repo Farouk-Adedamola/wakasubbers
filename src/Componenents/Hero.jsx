@@ -41,6 +41,11 @@ const LeftHandImage = styled.div`
   img:last-child {
     margin-left: 1rem;
   }
+  img {
+    ${media.lessThan("medium")`
+    width: 25vw;
+    `}
+  }
 `;
 const Hero = () => {
   return (
