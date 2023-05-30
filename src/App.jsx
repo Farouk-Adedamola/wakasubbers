@@ -47,10 +47,6 @@ function App() {
           <Hero />
           <Container>
             <Services />
-            {/* <h1>HELLO THERE</h1>
-          <h2>HELLO THERE</h2>
-          <h3>HELLO THERE</h3>
-          <h4>HELLO THERE</h4> */}
           </Container>
         </Wrapper>
       )}
