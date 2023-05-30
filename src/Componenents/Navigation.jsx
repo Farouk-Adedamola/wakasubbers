@@ -23,12 +23,24 @@ const LogoWrapper = styled.div`
   img {
     width: 120px;
     height: 100px;
+    ${media.lessThan("medium")`
+  display: none;
+  // width: 50px;
+  // height: 45px;
+  `}
   }
 
-  ${media.lessThan("small")`
-  width: 80px;
-  height: 65px;
+  p {
+    ${media.lessThan("medium")`
+  font-size: 1.3rem;
+  font-family: "SFBlack";
+  color: #6500e0;
+
   `}
+    ${media.greaterThan("medium")`
+  display: none;
+  `}
+  }
 `;
 
 const LinksWrapper = styled.div`
@@ -76,6 +88,7 @@ const Navigation = () => {
         <Container>
           <LogoWrapper>
             <img src={wakasub} alt="wakasub" />
+            <p>Wakasüb</p>
           </LogoWrapper>
           <LinksWrapper>
             <button>

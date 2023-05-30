@@ -13,10 +13,12 @@
     "components": "^0.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.9.0",
     "react-loader-spinner": "^5.3.4",
     "react-spinners": "^0.13.8",
     "styled": "^1.0.0",
-    "styled-media-query": "^2.1.2"
+    "styled-media-query": "^2.1.2",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",

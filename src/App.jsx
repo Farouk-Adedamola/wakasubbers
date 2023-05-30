@@ -3,6 +3,8 @@ import styled from "styled-components";
 import media from "styled-media-query";
 import DotLoader from "react-spinners/ClipLoader";
 import Navigation from "./Componenents/Navigation";
+import Hero from "./Componenents/Hero";
+import Services from "./Componenents/Services";
 // import classes from "./"
 
 const Wrapper = styled.div``;
@@ -42,7 +44,9 @@ function App() {
       ) : (
         <Wrapper>
           <Navigation />
+          <Hero />
           <Container>
+            <Services />
             {/* <h1>HELLO THERE</h1>
           <h2>HELLO THERE</h2>
           <h3>HELLO THERE</h3>
