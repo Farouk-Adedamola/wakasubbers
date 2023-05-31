@@ -153,6 +153,9 @@ const Trust = styled.div`
         color: #16054e;
         margin-top: 0;
         `}
+      ${media.lessThan("small")`
+  font-size: .6rem;
+    `}
     }
   }
 `;

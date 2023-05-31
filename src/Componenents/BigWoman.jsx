@@ -16,6 +16,9 @@ const Container1 = styled.div`
   align-items: center;
   position: absolute;
   top: 0;
+  ${media.lessThan("small")`
+  padding: 0.2rem;
+    `}
   ${media.lessThan("medium")`
     width: 33vw;
     `}
@@ -31,12 +34,21 @@ const Container1 = styled.div`
     height: 20px;
     border-radius: 50px;
     background: #6500e0;
+    ${media.lessThan("small")`
+  width: 14px;
+    height: 14px;
+    `}
   }
 
   p {
     font-family: "regular";
     letter-spacing: -0.08rem;
     font-size: 0.8rem;
+    ${media.lessThan("small")`
+  margin-left: .2px;
+    font-size: 0.6rem;
+
+    `}
   }
 `;
 
@@ -50,6 +62,9 @@ const Container2 = styled.div`
   position: absolute;
   top: 1rem;
   right: 0;
+  ${media.lessThan("small")`
+  padding: 0.2rem;
+    `}
   ${media.lessThan("medium")`
     width: 33vw;
     `}
@@ -57,19 +72,28 @@ const Container2 = styled.div`
   ${media.greaterThan("medium")`
     width: 12vw;
     top: 0;
-  right: 7rem;
+  right: 10rem;
     `}
   div {
     width: 20px;
     height: 20px;
     border-radius: 50px;
     background: #6500e0;
+    ${media.lessThan("small")`
+  width: 14px;
+    height: 14px;
+    `}
   }
 
   p {
     font-family: "regular";
     letter-spacing: -0.08rem;
     font-size: 0.8rem;
+    ${media.lessThan("small")`
+  margin-left: .2px;
+    font-size: 0.6rem;
+
+    `}
   }
 `;
 
@@ -83,6 +107,9 @@ const Container3 = styled.div`
   position: absolute;
   bottom: 3rem;
   left: 0;
+  ${media.lessThan("small")`
+  padding: 0.2rem;
+    `}
   ${media.lessThan("medium")`
     width: 33vw;
     `}
@@ -90,18 +117,29 @@ const Container3 = styled.div`
   ${media.greaterThan("medium")`
     width: 12vw;
     left: 8rem;
+  bottom: 6rem;
+
     `}
   div {
     width: 20px;
     height: 20px;
     border-radius: 50px;
     background: #6500e0;
+    ${media.lessThan("small")`
+  width: 14px;
+    height: 14px;
+    `}
   }
 
   p {
     font-family: "regular";
     letter-spacing: -0.08rem;
     font-size: 0.8rem;
+    ${media.lessThan("small")`
+  margin-left: .2px;
+    font-size: 0.6rem;
+
+    `}
   }
 `;
 
@@ -115,25 +153,39 @@ const Container4 = styled.div`
   position: absolute;
   bottom: 2rem;
   right: 0;
+  ${media.lessThan("small")`
+  padding: 0.2rem;
+    `}
   ${media.lessThan("medium")`
     width: 33vw;
     `}
 
   ${media.greaterThan("medium")`
     width: 12vw;
-    right: 6rem;
+    right: 7.5rem;
+  bottom: 6rem;
+
     `}
   div {
     width: 20px;
     height: 20px;
     border-radius: 50px;
     background: #6500e0;
+    ${media.lessThan("small")`
+  width: 14px;
+    height: 14px;
+    `}
   }
 
   p {
     font-family: "regular";
     letter-spacing: -0.08rem;
     font-size: 0.8rem;
+    ${media.lessThan("small")`
+  margin-left: .2px;
+    font-size: 0.6rem;
+
+    `}
   }
 `;
 

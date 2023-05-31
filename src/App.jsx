@@ -7,6 +7,7 @@ import Hero from "./Componenents/Hero";
 import Services from "./Componenents/Services";
 import Affiliate from "./Componenents/Affiliate";
 import BigWoman from "./Componenents/BigWoman";
+import Footer from "./Componenents/Footer";
 // import classes from "./"
 
 const Wrapper = styled.div``;
@@ -52,6 +53,7 @@ function App() {
             <Affiliate />
             <BigWoman />
           </Container>
+          <Footer />
         </Wrapper>
       )}
     </Fragment>
