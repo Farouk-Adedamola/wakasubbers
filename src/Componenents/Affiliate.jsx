@@ -105,7 +105,9 @@ const Affiliate = () => {
       </Wrapper>
       <Explore>
         <p>Explore more features</p>
-        <img src={arrow} alt="" />
+        <a href="https://app.wakasub.com/register">
+          <img src={arrow} alt="" />
+        </a>
       </Explore>
     </Fragment>
   );

@@ -43,9 +43,9 @@ const Footer = () => {
       <Wrapper>
         <Foot>
           <p>
-            For feedback contact our live support on <a href="">whatsapp</a>{" "}
-            <br /> or reach out through email at{" "}
-            <span>support@wakasub.com </span>
+            For feedback contact our live support on{" "}
+            <a href="https://wa.link/wrc6h6">whatsapp</a> <br /> or reach out
+            through email at <span>support@wakasub.com </span>
           </p>
 
           <p>Wakasüb &copy; 2023</p>

@@ -21,6 +21,7 @@ const Section = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  place-items: center;
   `}
 `;
 
@@ -34,6 +35,10 @@ const Container = styled.div`
 
   ${media.greaterThan("large")`
   width: 17vw;
+  `}
+
+  ${media.lessThan("medium")`
+  width: 34vw;
   `}
 
   p {
