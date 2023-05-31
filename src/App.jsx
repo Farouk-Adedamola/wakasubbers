@@ -6,6 +6,7 @@ import Navigation from "./Componenents/Navigation";
 import Hero from "./Componenents/Hero";
 import Services from "./Componenents/Services";
 import Affiliate from "./Componenents/Affiliate";
+import BigWoman from "./Componenents/BigWoman";
 // import classes from "./"
 
 const Wrapper = styled.div``;
@@ -49,6 +50,7 @@ function App() {
           <Container>
             <Services />
             <Affiliate />
+            <BigWoman />
           </Container>
         </Wrapper>
       )}

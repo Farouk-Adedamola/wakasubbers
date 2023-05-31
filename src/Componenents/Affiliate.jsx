@@ -7,7 +7,7 @@ import arrow from "../assets/arrow.svg";
 const Wrapper = styled.div`
   margin: 1.5rem 0;
   ${media.greaterThan("medium")`
-margin: 5rem 0;
+margin: 5rem 0 2rem 0;
 `}
 
   h2 {
@@ -100,7 +100,7 @@ const Affiliate = () => {
         <p>
           Sure cashin and cashout, take advantage of our API and sell all our
           services from the comfort of your website. easy,fast and swift
-          integration to set you up in no time. integration.
+          integration to set you up in no time.
         </p>
       </Wrapper>
       <Explore>
