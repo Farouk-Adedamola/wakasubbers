@@ -1,6 +1,7 @@
 {
   "name": "wakasubbers",
   "private": true,
+  "homepage": "https://wakasub.com/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

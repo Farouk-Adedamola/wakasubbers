@@ -35,6 +35,10 @@ const Foot = styled.div`
     ${media.lessThan("small")`
     font-size: 1rem;
     `}
+
+    span {
+      color: #6500e0;
+    }
   }
 `;
 const Footer = () => {
@@ -48,7 +52,10 @@ const Footer = () => {
             through email at <span>support@wakasub.com </span>
           </p>
 
-          <p>Wakasüb &copy; 2023</p>
+          <p>
+            {" "}
+            <span>Wakasüb</span> &copy; 2023
+          </p>
         </Foot>
       </Wrapper>
     </Fragment>

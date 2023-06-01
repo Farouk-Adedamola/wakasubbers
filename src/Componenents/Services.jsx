@@ -108,7 +108,9 @@ const Wrapper = styled.div`
     transition: all 0.6s;
     border: none;
     outline: none;
-
+    a {
+      color: #fff;
+    }
     &:hover {
       background: #fff;
 
