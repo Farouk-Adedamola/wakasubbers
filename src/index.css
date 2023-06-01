@@ -29,7 +29,7 @@
     linear-gradient(blue 0 0) calc(3 * 100% / 5),
     linear-gradient(blue 0 0) calc(4 * 100% / 5),
     linear-gradient(blue 0 0) calc(5 * 100% / 5);
-  background-size: 0.09px 100%; /* Control the width here*/
+  background-size: 0.08px 100%; /* Control the width here*/
   background-repeat: no-repeat;
 }
 

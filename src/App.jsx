@@ -47,12 +47,14 @@ function App() {
       ) : (
         <Wrapper>
           <Navigation />
-          <Hero />
-          <Container>
-            <Services />
-            <Affiliate />
-            <BigWoman />
-          </Container>
+          <section className="body__contain">
+            <Hero />
+            <Container>
+              <Services />
+              <Affiliate />
+              <BigWoman />
+            </Container>
+          </section>
           <Footer />
         </Wrapper>
       )}
