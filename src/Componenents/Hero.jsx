@@ -47,6 +47,21 @@ const LeftHandImage = styled.div`
     `}
   }
 `;
+
+const VideoSection = styled.section`
+  width: 80vw;
+  margin: 2rem auto;
+  border: 3px solid #6500e0;
+
+  ${media.greaterThan("medium")`
+  display: none;
+  `}
+
+  iframe {
+    width: 100%;
+    height: 350px;
+  }
+`;
 const Hero = () => {
   return (
     <Fragment>
@@ -78,6 +93,13 @@ const Hero = () => {
             <img src={appstore} alt="" />
           </LeftHandImage>
         </LeftHand>
+        <VideoSection>
+          <iframe
+            src="https://www.youtube.com/embed/qiihhk1AISY?controls=0"
+            title="YouTube video player"
+            allow=" autoplay; clipboard-write; encrypted-media; picture-in-picture; "
+          ></iframe>
+        </VideoSection>
       </Section>
     </Fragment>
   );
